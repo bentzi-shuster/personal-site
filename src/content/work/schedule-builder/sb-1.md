@@ -1,7 +1,7 @@
 ---
 title: Schedule Builder UI Revamp
 publishDate: 2025-03-17 00:00:00
-img: /assets/SB/OLD_SB_1.png
+img: /personal-site/assets/SB/OLD_SB_1.png
 img_alt: The first schedule builder
 description: |
   The first of the full blown schedule builder UIs

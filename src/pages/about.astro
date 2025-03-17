@@ -14,7 +14,10 @@ import Hero from "../components/Hero.astro";
         title="A lil bit about me"
         tagline="Thanks for checking out my site! Here's a little bit about me."
       >
-        <img src="/assets/goofy.jpg" alt="Ben Shuster in the snow" />
+        <img
+          src={import.meta.env.BASE_URL + "/assets/goofy.jpg"}
+          alt="Ben Shuster in the snow"
+        />
       </Hero>
       <section>
         <h2 class="section-title">Background</h2>

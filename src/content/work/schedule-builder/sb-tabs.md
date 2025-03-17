@@ -1,7 +1,7 @@
 ---
 title: Schedule Builder Tabs
 publishDate: 2025-03-17 00:00:00
-img: /assets/SB/SB_Tabs.png
+img: /personal-site/assets/SB/SB_Tabs.png
 img_alt: The NJIT schedule builder with tabs added via a chrome extension
 description: |
   The next step of the schdule builder project

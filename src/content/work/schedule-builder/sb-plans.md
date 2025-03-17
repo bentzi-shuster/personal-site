@@ -1,7 +1,7 @@
 ---
 title: Schedule Builder Plans
 publishDate: 2025-03-17 00:00:00
-img: /assets/SB/SB_Plans.png
+img: /personal-site/assets/SB/SB_Plans.png
 img_alt: The schedule builder plans chrome extension UI
 description: |
   The start of the schdule builder project

@@ -1,7 +1,7 @@
 ---
 title: Schedule Builder UI Revamp 2
 publishDate: 2025-03-17 00:00:00
-img: /assets/SB/OLD_SB_2.png
+img: /personal-site/assets/SB/OLD_SB_2.png
 img_alt: The second improved schedule builder
 description: |
   Building on the first schedule builder UI with more features and a better design

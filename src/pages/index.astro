@@ -45,7 +45,7 @@ const projects = (await getCollection("work"))
           alt="Ben Shuster smiling in a red plaid shirt and tortoise shell glasses"
           width="480"
           height="620"
-          src="/assets/ben.jpg"
+          src={import.meta.env.BASE_URL + "/assets/ben.jpg"}
         />
       </header>
 
@@ -75,7 +75,7 @@ const projects = (await getCollection("work"))
         </div>
 
         <div class="cta">
-          <CallToAction href="/work/">
+          <CallToAction href={import.meta.env.BASE_URL + "/work"}>
             View All
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
@@ -96,92 +96,104 @@ const projects = (await getCollection("work"))
             {
               [
                 {
-                  logo: "/assets/logos/LogoReact.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoReact.png",
                   name: "React",
                   href: "https://reactjs.org/",
                 },
                 {
-                  logo: "/assets/logos/LogoSvelte.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoSvelte.png",
                   name: "Svelte",
                   href: "https://svelte.dev/",
                 },
                 {
-                  logo: "/assets/logos/LogoNext.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoNext.png",
                   name: "Next.js",
                   href: "https://nextjs.org/",
                 },
                 {
-                  logo: "/assets/logos/LogoDocker.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoDocker.png",
                   name: "Docker",
                   href: "https://www.docker.com/",
                 },
                 {
-                  logo: "/assets/logos/LogoFigma.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoFigma.png",
                   name: "Figma",
                   href: "https://www.figma.com/",
                 },
                 {
-                  logo: "/assets/logos/LogoGit.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoGit.png",
                   name: "Git Version Control",
                   href: "https://git-scm.com/",
                 },
                 {
-                  logo: "/assets/logos/LogoGitHub.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoGitHub.png",
                   name: "GitHub",
                   href: "https://github.com",
                 },
                 {
-                  logo: "/assets/logos/LogoMongo.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoMongo.png",
                   name: "MongoDB",
                   href: "https://mongodb.com",
                 },
                 {
-                  logo: "/assets/logos/LogoPostgreSQL.png",
+                  logo:
+                    import.meta.env.BASE_URL +
+                    "/assets/logos/LogoPostgreSQL.png",
                   name: "PostgreSQL",
                   href: "https://postgresql.org",
                 },
                 {
-                  logo: "/assets/logos/LogoTailwind.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoTailwind.png",
                   name: "Tailwind CSS",
                   href: "https://tailwindcss.com",
                 },
                 {
-                  logo: "/assets/logos/LogoVSCode.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoVSCode.png",
                   name: "Visual Studio Code",
                   href: "https://code.visualstudio.com",
                 },
                 {
-                  logo: "/assets/logos/LogoHTML.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoHTML.png",
                   name: "HTML",
                   href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 },
                 {
-                  logo: "/assets/logos/LogoCSS.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoCSS.png",
                   name: "CSS",
                   href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 },
                 {
-                  logo: "/assets/logos/LogoJS.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoJS.png",
                   name: "JavaScript",
                   href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
                 },
                 {
-                  logo: "/assets/logos/LogoNode.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoNode.png",
                   name: "Node.js",
                   href: "https://nodejs.org",
                 },
                 {
-                  logo: "/assets/logos/LogoPython.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoPython.png",
                   name: "Python",
                   href: "https://python.org",
                 },
                 {
-                  logo: "/assets/logos/LogoTS.png",
+                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoTS.png",
                   name: "TypeScript",
                   href: "https://typescriptlang.org",
                 },
                 {
-                  logo: "/assets/logos/LogoAuth0.png",
+                  logo:
+                    import.meta.env.BASE_URL + "/assets/logos/LogoAuth0.png",
                   name: "Auth0",
                   href: "https://auth0.com",
                 },
@@ -274,7 +286,8 @@ const projects = (await getCollection("work"))
     top: 0;
     transform: translateY(-75%) translateX(-50%);
     background:
-      url("/assets/backgrounds/noise.png") top center/220px repeat,
+      url({import.meta.env.BASE_URL + "/assets/backgrounds/noise.png"}) top
+        center/220px repeat,
       var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
       var(--gray-999);
     background-blend-mode: overlay, normal, normal, normal;
