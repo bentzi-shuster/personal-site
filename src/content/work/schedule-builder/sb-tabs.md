@@ -28,3 +28,15 @@ $("input#input_id").autocomplete("search", "cs100");
 ```
 
 Using this, and a bit more technical knolwedge I had gained from the first addon, I was able to create a chrome extension that would allow me to have browser style tabs for the schedule builder.
+
+### Links
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/njit-schedule-builder-tab/mdplpgejlnfcnmecoibmdbbdgpbdhfkh)
+- [GitHub](https://github.com/bentzi-shuster/ScheduleBuilderTabs)
+
+### Further Development
+
+While the extension was a great tool, there are a lot of restrictions on what I can do with it.
+Thats when the next discovery was made, that the data for the schedule builder was being pulled from a JSONP API, and JSONP is able to bypass CORS restrictions.
+And with that the first _UI Revamp_ was started.
+[More on that here](./sb-1)
