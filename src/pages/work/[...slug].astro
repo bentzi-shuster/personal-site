@@ -91,7 +91,7 @@ const { Content } = await render(entry);
   }
 
   .content {
-    max-width: 65ch;
+    max-width: min(65ch, calc(100vw - 4rem));
     margin-inline: auto;
   }
 
@@ -113,7 +113,6 @@ const { Content } = await render(entry);
     background: var(--gradient-subtle);
     border: 1px solid var(--gray-800);
   }
-
   .content :global(blockquote) {
     font-size: var(--text-lg);
     font-family: var(--font-brand);
