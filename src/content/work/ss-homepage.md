@@ -4,7 +4,7 @@ publishDate: 2025-03-18 00:00:00
 img: /personal-site/assets/SS-homepage.png
 img_alt: The NJIT Student Senate Homepage
 description: |
-  The next step of the schdule builder project
+  The NJIT Student Senate Homepage
 tags:
   - Astro
   - Development
