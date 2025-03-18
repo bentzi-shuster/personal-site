@@ -52,4 +52,4 @@ While its not the prettiest UI, it gets the job done.
 ### Further Development
 
 Just a little bit after the release of the extension, I discovered that the search feature on the schedule builder was implmented in a way that made it possible to search for classes via a script.
-[More on what I did with that here](./sb-tabs)
+[More on what I did with that here](sb-tabs)
