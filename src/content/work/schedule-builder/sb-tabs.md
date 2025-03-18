@@ -39,4 +39,4 @@ Using this, and a bit more technical knolwedge I had gained from the first addon
 While the extension was a great tool, there are a lot of restrictions on what I can do with it.
 Thats when the next discovery was made, that the data for the schedule builder was being pulled from a JSONP API, and JSONP is able to bypass CORS restrictions.
 And with that the first _UI Revamp_ was started.
-[More on that here](sb-1)
+[More on that here](/personal-site/work/schedule-builder/sb-1)

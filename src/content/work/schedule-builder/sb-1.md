@@ -55,4 +55,4 @@ Since I was very new to the project, I was able to keep track of this in a MD fi
 Code maintenance is a big part of any project, and I learned that the hard way.
 After a few months of not working on the project, I came back to it and realized that I had no idea what was going on, and the codebase was a mess.
 Thats when the second _UI Revamp_ was started.
-[More on that here](sb-2)
+[More on that here](/personal-site/work/schedule-builder/sb-2)
