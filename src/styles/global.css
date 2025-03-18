@@ -1,4 +1,7 @@
 @import "tailwindcss";
+::selection {
+  background: #9965bb; /* Change to your preferred color */
+}
 /* Global variables */
 :root {
   /* Colors */

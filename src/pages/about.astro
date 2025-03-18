@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import Hero from "../components/Hero.astro";
+import { Picture } from "astro:assets";
 ---
 
 <BaseLayout
@@ -14,7 +15,10 @@ import Hero from "../components/Hero.astro";
         title="A lil bit about me"
         tagline="Thanks for checking out my site! Here's a little bit about me."
       >
-        <img
+        <Picture
+          width="200"
+          height="200"
+          class="spinanimate"
           src={import.meta.env.BASE_URL + "/assets/goofy.jpg"}
           alt="Ben Shuster in the snow"
         />
@@ -53,20 +57,27 @@ import Hero from "../components/Hero.astro";
           <i>New Jersey Institute of Technology</i>
         </div>
       </section>
-      <!-- <section>
-        <h2 class="section-title">Hobbies</h2>
-        <div class="content">
-          <ul>
-            <li>baking</li>
-            <li>hiking</li>
-          </ul>
-        </div>
-      </section> -->
     </main>
   </div>
 </BaseLayout>
 
 <style>
+  @media (prefers-reduced-motion: reduce) {
+    .spinanimate {
+      animation: none !important;
+    }
+  }
+  .spinanimate {
+    animation: spin 10s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .about {
     display: flex;
     flex-direction: column;

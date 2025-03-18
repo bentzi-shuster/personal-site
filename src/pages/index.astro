@@ -14,6 +14,7 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 
 // Page section components
 import Skills from "../components/Skills.astro";
+import { Picture } from "astro:assets";
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection("work"))
@@ -41,11 +42,12 @@ const projects = (await getCollection("work"))
           </div>
         </Hero>
 
-        <img
-          alt="Ben Shuster smiling in a red plaid shirt and tortoise shell glasses"
+        <Picture
+          alt="Ben Shuster smiling"
           width="480"
           height="620"
           src={import.meta.env.BASE_URL + "/assets/ben.jpg"}
+          class={"hover:scale-110 transition-transform ease-in-out duration-100 hover:rotate-10"}
         />
       </header>
 
@@ -75,7 +77,7 @@ const projects = (await getCollection("work"))
         </div>
 
         <div class="cta">
-          <CallToAction href={import.meta.env.BASE_URL + "/work"}>
+          <CallToAction href={"../work"}>
             View All
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
@@ -96,104 +98,92 @@ const projects = (await getCollection("work"))
             {
               [
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoReact.png",
+                  logo: import("../assets/logos/LogoReact.png"),
                   name: "React",
                   href: "https://reactjs.org/",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoSvelte.png",
+                  logo: import("../assets/logos/LogoSvelte.png"),
                   name: "Svelte",
                   href: "https://svelte.dev/",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoNext.png",
+                  logo: import("../assets/logos/LogoNext.png"),
                   name: "Next.js",
                   href: "https://nextjs.org/",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoDocker.png",
+                  logo: import("../assets/logos/LogoDocker.png"),
                   name: "Docker",
                   href: "https://www.docker.com/",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoFigma.png",
+                  logo: import("../assets/logos/LogoFigma.png"),
                   name: "Figma",
                   href: "https://www.figma.com/",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoGit.png",
+                  logo: import("../assets/logos/LogoGit.png"),
                   name: "Git Version Control",
                   href: "https://git-scm.com/",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoGitHub.png",
+                  logo: import("../assets/logos/LogoGitHub.png"),
                   name: "GitHub",
                   href: "https://github.com",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoMongo.png",
+                  logo: import("../assets/logos/LogoMongo.png"),
                   name: "MongoDB",
                   href: "https://mongodb.com",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL +
-                    "/assets/logos/LogoPostgreSQL.png",
+                  logo: import("../assets/logos/LogoPostgreSQL.png"),
                   name: "PostgreSQL",
                   href: "https://postgresql.org",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoTailwind.png",
+                  logo: import("../assets/logos/LogoTailwind.png"),
                   name: "Tailwind CSS",
                   href: "https://tailwindcss.com",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoVSCode.png",
+                  logo: import("../assets/logos/LogoVSCode.png"),
                   name: "Visual Studio Code",
                   href: "https://code.visualstudio.com",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoHTML.png",
+                  logo: import("../assets/logos/LogoHTML.png"),
                   name: "HTML",
                   href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoCSS.png",
+                  logo: import("../assets/logos/LogoCSS.png"),
                   name: "CSS",
                   href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoJS.png",
+                  logo: import("../assets/logos/LogoJS.png"),
                   name: "JavaScript",
                   href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoNode.png",
+                  logo: import("../assets/logos/LogoNode.png"),
                   name: "Node.js",
                   href: "https://nodejs.org",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoPython.png",
+                  logo: import("../assets/logos/LogoPython.png"),
                   name: "Python",
                   href: "https://python.org",
                 },
                 {
-                  logo: import.meta.env.BASE_URL + "/assets/logos/LogoTS.png",
+                  logo: import("../assets/logos/LogoTS.png"),
                   name: "TypeScript",
                   href: "https://typescriptlang.org",
                 },
                 {
-                  logo:
-                    import.meta.env.BASE_URL + "/assets/logos/LogoAuth0.png",
+                  logo: import("../assets/logos/LogoAuth0.png"),
                   name: "Auth0",
                   href: "https://auth0.com",
                 },
@@ -204,7 +194,8 @@ const projects = (await getCollection("work"))
                   rel="noopener"
                   class="mention-card hover:shadow-lg transition-shadow shadow-sm"
                 >
-                  <img
+                  <Picture
+                    formats={["avif", "webp"]}
                     alt={`${brand.name} logo`}
                     width="48"
                     height="48"
