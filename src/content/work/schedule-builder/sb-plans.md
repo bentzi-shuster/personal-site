@@ -8,6 +8,7 @@ description: |
 tags:
   - Chrome Extension
   - Development
+  - Schedule Builder Series
 ---
 
 ### The Idea

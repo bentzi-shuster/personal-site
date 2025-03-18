@@ -10,6 +10,7 @@ tags:
   - Development
   - Full Stack
   - Next.js
+  - Schedule Builder Series
 ---
 
 ### Background

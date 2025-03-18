@@ -9,6 +9,7 @@ tags:
   - Svelte
   - Frontend
   - Development
+  - Schedule Builder Series
 ---
 
 ### The precursor to the Schedule Builder

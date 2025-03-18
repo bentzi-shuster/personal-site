@@ -7,9 +7,25 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
-const projects = (await getCollection("work")).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+let projects = (await getCollection("work"))
+  .filter((project) => !project.data.tags.includes("Schedule Builder Series"))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+projects = [
+  ...projects,
+  {
+    id: "schedule-builder",
+    collection: "work",
+    data: {
+      title: "Schedule Builder Series",
+      description:
+        "Learn about the various projects Ben Shuster has worked on to fuel his unhealthy obsession with Schedule Builder.",
+      tags: ["Schedule Builder Series"],
+      publishDate: new Date(),
+      img: "/personal-site/assets/SB/NJIT_SB.png",
+      img_alt: "Schedule Builder logo",
+    },
+  },
+];
 ---
 
 <BaseLayout
@@ -20,7 +36,9 @@ const projects = (await getCollection("work")).sort(
     <main class="wrapper stack gap-8">
       <Hero
         title="My Work"
-        tagline="See my most recent projects below to get an idea of my past experience."
+        taglines={[
+          "See my most recent projects below to get an idea of my past experience.",
+        ]}
         align="start"
       />
       <Grid variant="offset">
