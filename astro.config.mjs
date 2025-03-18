@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   base: 'personal-site',
   site: "https://bentzi-shuster.github.io"  ,
-  
+  trailingSlash:'never',
   vite: {
     plugins: [tailwindcss()]
   }
